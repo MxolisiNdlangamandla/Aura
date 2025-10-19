@@ -1,36 +1,35 @@
-WAASHA — Learning project manual
-===============================
+# WAASHA — Learning project manual
 
-Overview
---------
+## Overview
+
 This repository is a teaching scaffold for a small web app called WAASHA.
 You asked for code samples for a landing page, client sign-up, provider sign-up,
 and a login page — plus a clear manual explaining how to link pages and
 use HTML, CSS, and JavaScript with Bootstrap.
 
-Files included (so far)
------------------------
-- index.html           — Landing page (Bootstrap + custom CSS + app.js)
-- css/styles.css       — Project styles and overrides
-- js/app.js            — Landing page JavaScript helpers and navigation
-- assets/              — images and other static assets (you add these)
+## Files included (so far)
 
-Planned next files (you will create manually using the templates below)
---------------------------------------------------------------------
+- index.html — Landing page (Bootstrap + custom CSS + app.js)
+- css/styles.css — Project styles and overrides
+- js/app.js — Landing page JavaScript helpers and navigation
+- assets/ — images and other static assets (you add these)
+
+## Planned next files (you will create manually using the templates below)
+
 - client-signup.html
 - provider-signup.html
 - login.html
 - client-dashboard.html
 - provider-dashboard.html
 
-How the pages link together
----------------------------
+## How the pages link together
+
 - Use standard <a href="..."> links for navigation (works without JS).
 - We add JavaScript to handle clicks for enhanced behavior. Example:
   - The landing page buttons call `window.location.href = 'client-signup.html'`.
 
-Using Bootstrap
----------------
+## Using Bootstrap
+
 I included Bootstrap via CDN in `index.html` to keep setup simple while you're
 learning. When you move to production, prefer installing Bootstrap via npm and
 building with a bundler.
@@ -43,28 +42,31 @@ Example CDN includes (already in `index.html`):
 Note: the integrity attributes are placeholders. For learning, CDN without SRI
 is fine, but when you publish, include correct integrity attributes.
 
-Templates you can copy and create (step-by-step)
------------------------------------------------
-1) client-signup.html (create in project root)
+## Templates you can copy and create (step-by-step)
+
+1. client-signup.html (create in project root)
+
    - Purpose: allow clients to create accounts.
    - Keep form fields: first name, last name, email, phone, password, submit.
    - Add client-side validation using the `validateRequired` helper in `js/app.js`.
    - On successful (fake) signup redirect to `client-dashboard.html`.
 
-2) provider-signup.html
+2. provider-signup.html
+
    - Similar to client signup but add fields for: service type, license/id
    - On successful (fake) signup redirect to `provider-dashboard.html`.
 
-3) login.html
+3. login.html
+
    - Include email and password fields.
    - Validate, then redirect to either `client-dashboard.html` or `provider-dashboard.html`.
    - For now, implement simple logic (if email contains "provider" go to provider dashboard.)
 
-4) Dashboards
+4. Dashboards
    - Keep placeholders for now. Add a "Log out" button that returns to `index.html`.
 
-Good practices and teaching notes
----------------------------------
+## Good practices and teaching notes
+
 - Structure: keep files small and focused (one responsibility per file).
 - Accessibility: always add `alt` to images, use semantic tags (nav, main, header, footer),
   and ensure keyboard focus is visible.
@@ -74,8 +76,8 @@ Good practices and teaching notes
 - Version control: use git from day one and write useful commits.
 - Clean code: name variables and functions clearly, keep functions small, comment non-obvious logic.
 
-How to test locally
--------------------
+## How to test locally
+
 You can open `index.html` directly in a browser, but a small local server is
 recommended to avoid mixed-content problems or CORS when you expand.
 
@@ -89,16 +91,16 @@ python -m http.server 5500
 
 Or use VS Code Live Server extension — it automatically serves files.
 
-What I changed and why (delta)
-------------------------------
+## What I changed and why (delta)
+
 - Replaced the previous example pages with a clean, teaching-focused landing
   `index.html` that uses Bootstrap and a small `app.js` demonstrating navigation
   and helper functions.
 - Fixed and simplified `css/styles.css` to avoid nested rules and keep
   overrides minimal.
 
-Next steps for you (practical exercise)
----------------------------------------
+## Next steps for you (practical exercise)
+
 1. Create `client-signup.html` by copying one of the templates above.
 2. Implement the form and call `Waasha.validateRequired` on submit.
 3. Create `provider-signup.html` and add provider-specific fields.
