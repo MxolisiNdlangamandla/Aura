@@ -1,0 +1,12 @@
+This is my initial prompt at the start of this project.
+write me the code on the site them I will create them manaully, 
+instead of deleting the code write it here and give write it a manual 
+with steps to follow and how do I link the pages, html, css and javascrip, 
+I have attached an image showing my design with 4 screenshot designs of the app am developing,
+start from index.html, css and javascript for the landing, javascript should be used to the buttons 
+to click and navigate to the next pages, then do the same for client , provider and login pages , 
+include all the good practises that the app like waasha needs to have, and explain all steps cleary 
+to me as a student and someone who is self teaching himself progaming or web development. this i should be 
+able to use as my documentation in the futurer, also add what i might have left out, I hav more design of the 
+app, I will provide them as we go along, I shold be confortable with these 3 progaming languages by the time I 
+finish develoing this app, html, css and javascrip and good proctsise or coding such as clean code ect.

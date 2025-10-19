@@ -1,0 +1,85 @@
+/* Custom CSS for Aura Project */
+/* Add your custom styles here - Bootstrap is already included */
+
+/* Example: Custom color variables */
+:root {
+    /*
+      Project stylesheet (teaching version)
+      - Uses Bootstrap for layout; this file contains project-specific overrides
+      - Keep styles simple and well-commented to learn from
+    */
+
+    /* -- Base helpers -- */
+    :root{
+      --brand: #0d6efd; /* bootstrap primary */
+      --muted: #6c757d;
+      --bg: #f8f9fa;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:var(--bg);
+      color:#222;
+    }
+
+    /* Header */
+    .site-header{background:#fff}
+    .site-header .navbar-brand img{object-fit:contain}
+
+    /* Hero */
+    .hero{padding:6rem 0}
+    .hero .display-5{color:#0b2140}
+
+    /* WAASHA - project stylesheet (teaching) */
+
+    /* Notes:
+       - Use Bootstrap for layout and components.
+       - Keep this file small: overrides, variables and utilities only.
+    */
+
+    :root{
+      --brand: #0d6efd;
+      --muted: #6c757d;
+      --bg: #f8f9fa;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* Header */
+    .site-header{background:#fff}
+    .site-header .navbar-brand img{object-fit:contain}
+
+    /* Hero */
+    .hero{padding:6rem 0}
+    .hero .display-5{color:#0b2140}
+
+    /* Buttons spacing */
+    .btn-lg{padding:.75rem 1.25rem}
+
+    /* Features */
+    #features h4{color:#0b2140}
+
+    /* Footer */
+    footer{background:#0b2140}
+
+    /* Small utilities */
+    .muted{color:var(--muted)}
+
+    /* Accessibility: keep focus outlines visible */
+    a:focus,button:focus{outline:3px solid rgba(13,110,253,.2);outline-offset:2px}
+
+    @media (max-width:767px){
+      .hero{padding:3rem 0}
+    }
+
+    /* End of custom styles */
+}               
